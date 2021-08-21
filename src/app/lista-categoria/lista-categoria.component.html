@@ -1,0 +1,12 @@
+   <div>
+        <div *ngFor ="let categoria of categorias;let i = index">
+            <app-boton (onClick)="click(i)" [mensaje]="categoria.nombre"></app-boton>
+           
+         </div>      
+    </div>
+   <hr>
+   <div class="row">
+       <div class="col-md-12">
+             <app-imagen [imagenes] ="categorias[index].imagenes"> </app-imagen>
+       </div>
+   </div>
